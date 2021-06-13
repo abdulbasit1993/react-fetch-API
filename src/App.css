@@ -1,0 +1,66 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, 
+    rgb(2, 1, 22) 0%,
+    rgba(9,9,121,1) 35%,
+    rgba(0,212,255,1) 100%);
+}
+.App {
+    text-align: center;
+}
+
+.heading {
+    color: #fff;
+}
+.fetch-btn {
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(29, 97, 153), rgb(15, 9, 102));
+	color: white;
+	--width: 250px;
+	--height: calc(var(--width) / 3);
+	width: var(--width);
+	height: var(--height);
+	text-align: center;
+	line-height: var(--height);
+	font-size: calc(var(--height) / 2.5);
+	font-family: sans-serif;
+	letter-spacing: 0.2em;
+	border: 2px solid rgb(141, 105, 15);
+	border-radius: 2em;
+	transform: perspective(500px) rotateY(-15deg);
+	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+}
+.fetch-btn:hover {
+    transform: perspective(500px) rotateY(15deg);
+	text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.fetch-btn:focus {
+    outline: none;
+}
+
+.data-list {
+    color: #fff;
+    margin-top: 50px;
+}
+
+.data-list li {
+    list-style-type: none;
+    background: #11ad0f;
+    padding: 20px;
+    margin-bottom: 19px;
+    width: 50%;
+    margin-left: 23%;
+    border-radius: 20px;
+}
+
+@media (max-width: 580px) {
+    .data-list li { 
+    width: 81%;
+    margin-left: 0;
+    }
+}
